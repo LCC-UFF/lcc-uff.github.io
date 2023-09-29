@@ -11,39 +11,39 @@
 
   <div id="case">
    <hr>
-   <h3 id="c1">ColaboraÁ„o com Pesquisador da NASA</h3>
+   <h3 id="c1">Colabora√ß√£o com Pesquisador da NASA</h3>
 <p>
-Em agosto de 2021, recebemos uma mensagem via e-mail de um pesquisador identificado como "a researcher in the Computational Physics branch of NASA Ames Research Center", o Federico Semeraro. Nessa mensagem, ele nos consultou com d˙vidas acerca do uso do programa desenvolvido pelo nosso grupo para computar a permeabilidade absoluta de meios porosos caracterizados por imagens bidimensionais, que foi publicado junto com um artigo do nosso grupo [1]. Nessa mensagem, ele perguntou se nÛs possuÌamos uma vers„o 3D do programa e se poderÌamos compartilhar com eles, finalizando o texto com "I would greatly appreciate your help and I will be sure to reciprocate in the future". 
+Em agosto de 2021, recebemos uma mensagem via e-mail de um pesquisador identificado como "a researcher in the Computational Physics branch of NASA Ames Research Center", o Federico Semeraro. Nessa mensagem, ele nos consultou com d√∫vidas acerca do uso do programa desenvolvido pelo nosso grupo para computar a permeabilidade absoluta de meios porosos caracterizados por imagens bidimensionais, que foi publicado junto com um artigo do nosso grupo [1]. Nessa mensagem, ele perguntou se n√≥s possu√≠amos uma vers√£o 3D do programa e se poder√≠amos compartilhar com eles, finalizando o texto com "I would greatly appreciate your help and I will be sure to reciprocate in the future". 
 </p><p>
-O Federico È um dos principais desenvolvedores do "Porous Microstructure Analysis (PuMA) software", um programa da NASA voltado para a an·lise e caracterizaÁ„o computacional de meios porosos.
+O Federico √© um dos principais desenvolvedores do "Porous Microstructure Analysis (PuMA) software", um programa da NASA voltado para a an√°lise e caracteriza√ß√£o computacional de meios porosos.
 </p><p>
-Respondemos agradecendo pelo retorno e sugerimos combinar uma conversa para entendermos melhor as necessidades deles. No inÌcio de setembro de 2021 fizemos a nossa primeira reuni„o, com a participaÁ„o de 3 pesquisadores da UFF e 3 membros do time PuMA, entre pesquisadores e consultores da NASA.
+Respondemos agradecendo pelo retorno e sugerimos combinar uma conversa para entendermos melhor as necessidades deles. No in√≠cio de setembro de 2021 fizemos a nossa primeira reuni√£o, com a participa√ß√£o de 3 pesquisadores da UFF e 3 membros do time PuMA, entre pesquisadores e consultores da NASA.
 </p><p>
-Como estabelecer colaboraÁ„o ou parceria com grupos de pesquisa da NASA? Entendemos que tÌnhamos 3 opÁıes: 1) n„o compartilhar nossos recursos com eles; 2) estabelecer condiÁıes para o compartilhamento dos nossos recursos; ou 3) encontrar uma alternativa em que ambos os lados compartilhassem seus recursos, de forma que todos os envolvidos fossem beneficiados desses compartilhamentos. Concordamos em seguir com a terceira opÁ„o. Enxergamos que o primeiro passo de qualquer colaboraÁ„o seria desenvolver um trabalho em conjunto e que prioritariamente gerasse uma publicaÁ„o de qualidade e de grande impacto.
+Como estabelecer colabora√ß√£o ou parceria com grupos de pesquisa da NASA? Entendemos que t√≠nhamos 3 op√ß√µes: 1) n√£o compartilhar nossos recursos com eles; 2) estabelecer condi√ß√µes para o compartilhamento dos nossos recursos; ou 3) encontrar uma alternativa em que ambos os lados compartilhassem seus recursos, de forma que todos os envolvidos fossem beneficiados desses compartilhamentos. Concordamos em seguir com a terceira op√ß√£o. Enxergamos que o primeiro passo de qualquer colabora√ß√£o seria desenvolver um trabalho em conjunto e que prioritariamente gerasse uma publica√ß√£o de qualidade e de grande impacto.
 </p><p>
-Decidimos ent„o compartilhar uma vers„o preliminar do programa para simulaÁıes em 3D, mas logo eles perceberam que era limitada. Esta empregava um solver direto, que atingia o limite da memÛria do computador muito r·pido.
+Decidimos ent√£o compartilhar uma vers√£o preliminar do programa para simula√ß√µes em 3D, mas logo eles perceberam que era limitada. Esta empregava um solver direto, que atingia o limite da mem√≥ria do computador muito r√°pido.
 </p><p>
-Eles tÍm interesse em simular problemas que demandam a resoluÁ„o de sistemas lineares com mais de 1 bilh„o de equaÁıes. Problemas que os prÛprios pesquisadores da NASA n„o haviam conseguido solucionar computacionalmente de forma eficiente. Quando passÌveis de soluÁ„o, tais problemas normalmente demandam de infraestrutura com supercomputadores, e que ainda assim requerem, para uma simples simulaÁ„o, um tempo de processamento que dura de v·rios dias a semanas.
+Eles t√™m interesse em simular problemas que demandam a resolu√ß√£o de sistemas lineares com mais de 1 bilh√£o de equa√ß√µes. Problemas que os pr√≥prios pesquisadores da NASA n√£o haviam conseguido solucionar computacionalmente de forma eficiente. Quando pass√≠veis de solu√ß√£o, tais problemas normalmente demandam de infraestrutura com supercomputadores, e que ainda assim requerem, para uma simples simula√ß√£o, um tempo de processamento que dura de v√°rios dias a semanas.
 </p><p>
-¿ Època, est·vamos trabalhando tambÈm em uma primeira vers„o acelerada em GPU deste solver, seguindo uma abordagem massivamente paralela de implementaÁ„o do MÈtodo dos Elementos Finitos "sem matriz", onde vislumbr·vamos simular problemas de grande escala e de forma eficiente.
+√Ä √©poca, est√°vamos trabalhando tamb√©m em uma primeira vers√£o acelerada em GPU deste solver, seguindo uma abordagem massivamente paralela de implementa√ß√£o do M√©todo dos Elementos Finitos "sem matriz", onde vislumbr√°vamos simular problemas de grande escala e de forma eficiente.
 </p><p>
-Fizemos um teste com uma imagem micro-tomogr·fica de um material desenvolvido pela prÛpria NASA, para o qual n„o possuÌamos os valores de permeabilidade medidos em laboratÛrio de antem„o. Este material, denominado FiberFormTM, È utilizado em aplicaÁıes aeroespaciais, mais especificamente em sistemas de proteÁ„o tÈrmica. Obter uma soluÁ„o computacional para esse problema foi um feito sem precedentes, pois alÈm de utilizarmos computadores pessoais, o tempo de processamento foi da ordem de minutos. Os valores de permeabilidade que obtivemos com nossos solvers mostraram Ûtima concord‚ncia com os resultados experimentais reportados pelos testes de laboratÛrio conduzidos por eles [2]. 
+Fizemos um teste com uma imagem micro-tomogr√°fica de um material desenvolvido pela pr√≥pria NASA, para o qual n√£o possu√≠amos os valores de permeabilidade medidos em laborat√≥rio de antem√£o. Este material, denominado FiberFormTM, √© utilizado em aplica√ß√µes aeroespaciais, mais especificamente em sistemas de prote√ß√£o t√©rmica. Obter uma solu√ß√£o computacional para esse problema foi um feito sem precedentes, pois al√©m de utilizarmos computadores pessoais, o tempo de processamento foi da ordem de minutos. Os valores de permeabilidade que obtivemos com nossos solvers mostraram √≥tima concord√¢ncia com os resultados experimentais reportados pelos testes de laborat√≥rio conduzidos por eles [2]. 
 </p><p>
-Entendemos que ganhamos a confianÁa e a partir daÌ comeÁamos a trabalhar jutos na confecÁ„o de um artigo [3] que foi publicado no periÛdico Computational Materials Science. A colaboraÁ„o foi fundamental pois pudemos demonstrar a capacidade dos nossos programas em resolver problemas sofisticados, que nunca haviam sido resolvidos anteriormente. 
+Entendemos que ganhamos a confian√ßa e a partir da√≠ come√ßamos a trabalhar jutos na confec√ß√£o de um artigo [3] que foi publicado no peri√≥dico Computational Materials Science. A colabora√ß√£o foi fundamental pois pudemos demonstrar a capacidade dos nossos programas em resolver problemas sofisticados, que nunca haviam sido resolvidos anteriormente. 
 </p><p>
-Os mÈtodos "sem matriz" desenvolvidos ao longo deste trabalho tambÈm foram implementados no PuMA [4], onde somos creditados pela contribuiÁ„o.
+Os m√©todos "sem matriz" desenvolvidos ao longo deste trabalho tamb√©m foram implementados no PuMA [4], onde somos creditados pela contribui√ß√£o.
 </p><p>
-Em 2022 o PUMA ganhou o prÍmio de programa do ano da NASA. O Federico nos agradeceu pela colaboraÁ„o e por termos enviado ‡ NASA uma carta explicitando a import‚ncia do programa para o nosso grupo e para o meio acadÍmico. O Federico entendeu que a nossa colaboraÁ„o foi importante para conseguir essa premiaÁ„o.
+Em 2022 o PUMA ganhou o pr√™mio de programa do ano da NASA. O Federico nos agradeceu pela colabora√ß√£o e por termos enviado √† NASA uma carta explicitando a import√¢ncia do programa para o nosso grupo e para o meio acad√™mico. O Federico entendeu que a nossa colabora√ß√£o foi importante para conseguir essa premia√ß√£o.
 </p><p>
-No segundo semestre de 2022, o Federico fez uma apresentaÁ„o no ciclo de semin·rios do programa de pÛs, a convite do nosso grupo [5].
+No segundo semestre de 2022, o Federico fez uma apresenta√ß√£o no ciclo de semin√°rios do programa de p√≥s, a convite do nosso grupo [5].
 </p><p>
-Estamos atualmente escrevendo juntos 3 artigos de revista, detalhando frentes de trabalho diferentes que partiram desta colaboraÁ„o inicial.
+Estamos atualmente escrevendo juntos 3 artigos de revista, detalhando frentes de trabalho diferentes que partiram desta colabora√ß√£o inicial.
 </p><p>
-A parceria possibilita combinar os nossos recursos com os deles. Desta forma, nossos solvers podem ser testados em suas placas gr·ficas dedicadas ao alto desempenho, como Nvidia A100. Assim como, podem ser verificados e validados em modelos de materiais reais desenvolvidos pela prÛpria NASA.
+A parceria possibilita combinar os nossos recursos com os deles. Desta forma, nossos solvers podem ser testados em suas placas gr√°ficas dedicadas ao alto desempenho, como Nvidia A100. Assim como, podem ser verificados e validados em modelos de materiais reais desenvolvidos pela pr√≥pria NASA.
 </p><p>
-Manter essa colaboraÁ„o tem sido um fator de grande estimulo para o nosso grupo, pois percebemos que alÈm de conseguirmos desenvolver soluÁıes de grande utilidade, outros grupos de renome internacional tÍm interesse em nossas soluÁıes computacionais para resolver problemas complexos e sofisticados.
+Manter essa colabora√ß√£o tem sido um fator de grande estimulo para o nosso grupo, pois percebemos que al√©m de conseguirmos desenvolver solu√ß√µes de grande utilidade, outros grupos de renome internacional t√™m interesse em nossas solu√ß√µes computacionais para resolver problemas complexos e sofisticados.
 </p><p>
-<b>REFER NCIAS</b>
+<b>REFER√äNCIAS</b>
 </p><p>
 [1] Vianna, R.; Cunha, A.; Azeredo, R.; Leiderman, R.; Pereira, A. Computing effective permeability of porous media with fem and micro-ct: An educational approach. Fluids 16, 5 (2020)
 </p><p>
